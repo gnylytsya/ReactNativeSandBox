@@ -9,7 +9,8 @@ const AlbumDetail = ({album}) => {
         thumbnailStyle,
         headerContentStyle,
         thumbnailContainerStyle,
-        headerTextStyle
+        headerTextStyle,
+        imageStyle,
     } = styles;
     return (
       <Card>
@@ -27,7 +28,10 @@ const AlbumDetail = ({album}) => {
               </View>
           </CardSection>
           <CardSection>
-              <Images source={{ uri: image}} />
+              <Image
+                  style={imageStyle}
+                  source={{ uri: image}}
+              />
           </CardSection>
       </Card>
     );
@@ -50,7 +54,12 @@ const styles = {
         alignItems: 'center',
         marginLeft: 10,
         marginRight: 10
-    }
+    },
+    imageStyle: {
+        height: 300,
+        flex: 1,
+        width: null
+    },
 };
 
 export default AlbumDetail;

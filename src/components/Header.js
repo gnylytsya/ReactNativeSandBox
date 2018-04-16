@@ -8,7 +8,7 @@ const Header = () => {
 
     return (
         <View style={viewStyle}>
-            <Text style={textStyle}>AAAAAA</Text>
+            <Text style={textStyle}>Header</Text>
         </View>
     );
 };
